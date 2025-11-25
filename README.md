@@ -42,8 +42,8 @@ A modern, full-featured real estate marketplace built with React and Vite, suppo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/smartbroker.git
-cd smartbroker
+git clone https://github.com/HosamElden/ahmedhamied.git
+cd ahmedhamied
 ```
 
 2. Install dependencies:
@@ -58,7 +58,7 @@ npm run dev
 
 4. Open your browser and navigate to:
 ```
-http://localhost:3000
+http://localhost:5174
 ```
 
 ### Build for Production
@@ -119,11 +119,11 @@ src/
 
 ## 🎨 Key Technologies
 
-- **React 18**: Modern React with hooks
+- **React 19**: Modern React with hooks
 - **Vite**: Fast build tool and dev server
 - **React Router**: Client-side routing
 - **react-i18next**: Internationalization framework
-- **localStorage**: Client-side data persistence
+- **Supabase**: Backend and database
 - **BroadcastChannel**: Cross-tab synchronization
 
 ## 📝 Available Scripts
@@ -143,19 +143,17 @@ The application uses `react-i18next` for internationalization:
 
 ## 💾 Data Persistence
 
-Currently uses `localStorage` for data persistence:
+Uses Supabase for data persistence:
 
-- Properties stored in `properties` key
-- Users stored in `users` key
-- Authentication state in `user` key
+- Properties stored in database
+- Users authenticated through Supabase Auth
+- Real-time updates
 - Language preference in `i18nextLng` key
-
-**Note**: For production use, connect to a real backend (Supabase, Firebase, or custom API).
 
 ## 🔐 Authentication Flow
 
 1. User signs up with role selection (Buyer/Marketer/Developer)
-2. Credentials validated and stored in localStorage
+2. Credentials validated through Supabase
 3. Login with email and password
 4. Role-based access control for different features
 5. Persistent session across page reloads
@@ -170,7 +168,6 @@ Currently uses `localStorage` for data persistence:
 
 ## 🎯 Future Enhancements
 
-- [ ] Connect to real backend/API
 - [ ] Email notifications for status changes
 - [ ] Map integration for property locations
 - [ ] Advanced search filters
@@ -189,7 +186,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-For questions or support, please contact: [your-email@example.com]
+For questions or support, please contact the development team.
 
 ---
 
